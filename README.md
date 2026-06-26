@@ -9,7 +9,6 @@ MoodGit analyzes the emotional tone of your git commit history using Claude AI a
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Stars](https://img.shields.io/github/stars/Techie-Sakshi24/moodgit?style=social)
 
----
 
 ## What it does
 
@@ -43,7 +42,6 @@ MoodGit analyzes the emotional tone of your git commit history using Claude AI a
 
 It also generates a **beautiful HTML report** with a doughnut chart and dark-mode timeline you can share.
 
----
 
 ## Install
 
@@ -59,8 +57,6 @@ cd moodgit
 pip install -e .
 ```
 
----
-
 ## Setup
 
 You need an Anthropic API key. Get one free at [console.anthropic.com](https://console.anthropic.com).
@@ -70,8 +66,6 @@ export ANTHROPIC_API_KEY=sk-ant-...
 ```
 
 Or add it to your `.bashrc` / `.zshrc` to make it permanent.
-
----
 
 ## Usage
 
@@ -98,8 +92,6 @@ moodgit --no-table
 moodgit /path/to/repo -n 50 --branch dev --html my-report.html
 ```
 
----
-
 ## Emotions detected
 
 | Emotion | Trigger patterns |
@@ -113,8 +105,6 @@ moodgit /path/to/repo -n 50 --branch dev --html my-report.html
 | 🤔 confused | `wip`, `temp`, `idk`, `todo`, `??` |
 | 💪 determined | `keep going`, `almost`, `nearly` |
 | 😎 casual | short vague messages with no urgency |
-
----
 
 ## HTML Report
 
@@ -142,8 +132,6 @@ Run with `--html report.html` to get a shareable dark-mode report:
 3. Claude returns structured JSON with emotion labels, intensity scores, and a witty one-liner per commit
 4. **Rich** renders the terminal UI; a custom HTML generator builds the report
 
----
-
 ## Contributing
 
 PRs welcome. Ideas for future features:
@@ -154,12 +142,8 @@ PRs welcome. Ideas for future features:
 - [ ] Slack/Discord bot that posts your repo's weekly vibe
 - [ ] `.moodgitignore` to exclude merge commits
 
----
-
 ## License
 
 MIT — use it, fork it, build on it.
-
----
 
 Made by [Sakshi Kale](https://github.com/Techie-Sakshi24) · Powered by [Claude AI](https://anthropic.com)
